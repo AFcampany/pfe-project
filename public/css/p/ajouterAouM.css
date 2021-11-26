@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    width: 100%;
+    
+    /* background: rgb(75, 63, 255);
+    background: linear-gradient(
+      318deg,
+      rgba(75, 63, 255, 0.846673703661152) 0%,
+      rgba(9, 9, 121, 1) 48%,
+      rgba(0, 212, 255, 1) 100%
+    ); */
+    background-image: linear-gradient(
+      to top right,
+      rgb(99, 180, 235),
+      rgb(83, 152, 233),
+      rgb(67, 125, 232),
+      rgb(50, 97, 230),
+      rgb(34, 70, 229),
+      rgb(18, 42, 227),
+      rgb(37, 49, 228),
+      rgb(56, 56, 228),
+      rgb(75, 63, 229),
+      rgb(94, 69, 229),
+      rgb(113, 76, 230),
+      rgb(132, 83, 230)
+    );
+  }
+  
+  .simple-card {
+    width: 80%;
+    height: 40vh;
+  }
+  

@@ -1,0 +1,47 @@
+.marginD{
+    margin: 50px;
+}
+.flexe{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.flexed{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+}
+.inpute{
+    display: block;
+    width: 280px;
+    height: 40px;
+    padding-right: 5px;
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+    border-radius: 15px;
+}
+.display-non{
+    display: none;
+}
+.btn{
+    margin-left: 90px;
+    width: 120px;
+    height: 35px;
+    background-color: #1974dd;
+    color: white;
+    border-radius: 15px;
+}
+
+.l_input{
+    width: 580px;
+}
+.combo{
+    display: block;
+    width: 280px;
+    height: 40px;
+    padding-right: 5px;
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+    border-radius: 15px;
+}

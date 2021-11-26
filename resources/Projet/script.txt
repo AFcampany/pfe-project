@@ -1,0 +1,20 @@
+<script>
+
+    $(document).ready(function(){
+      var table= $('#datatable').DataTable();
+      table.on('click','edit',function(){
+        $tr=$(this).closest('tr');
+        if ($($tr).hasClass('child')){
+          $tr= $tr.prev('parent');
+
+          var data= table.row($tr).data();
+          console.log(data);
+          $('#').val(data[1]);
+          $('#').val(data[2]);
+          $('#').val(data[3]);
+          $('#editForm').attr('action','/str/'+data[0]);
+          $('#editModal').modal('show');
+        }
+      });
+    });
+  </script>

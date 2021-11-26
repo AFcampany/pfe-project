@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="./bootstrap-5.0.2-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./login.css" />
+
+    <title>Login</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/site.webmanifest" />
+  </head>
+  <body class="d-flex justify-content-center align-items-center">
+    <div
+      class="glass-card container-sm d-flex flex-column justify-content-center"
+    >
+      <div class="row">
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+          <img src="./assets/GTP.svg" alt="GTP" class="sized-logo" />
+        </div>
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+          <form class="sized-form">
+            <div class="mb-3 form-floating">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Username"
+                id="username"
+              />
+              <label for="username">Username</label>
+            </div>
+            <div class="mb-3 form-floating">
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Password"
+                id="password"
+              />
+              <label for="password">Password</label>
+            </div>
+            <div class="d-flex justify-content-center">
+              <a href=""><button type="submit" class="btn btn-primary">Submit</button></a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      var popoverTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="popover"]')
+      );
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
+      });
+    </script>
+  </body>
+</html>

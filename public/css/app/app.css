@@ -1,0 +1,163 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sbtn{
+    border: none;
+    outline: none;
+    background: none;
+    float: right;
+    margin-top: 15px;
+    margin-right: 10px;
+    padding: 9px 9px 4px 8px;
+}
+.sbtn:hover{
+    background: black;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.sidebar{
+    position: fixed;
+    display: block;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #1974e2;
+    color: white;
+}
+
+.header{
+    font-size: 22px;
+    padding: 10px;
+    color: darkblue;
+    text-align: center;
+    /*line-height: 44px;*/
+    background: white;
+}
+#father >li{
+    list-style-type: none;
+    text-align: center;
+
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(244, 244, 244, .2);
+    border-bottom: 1px solid black;
+}
+#son1 >li{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(244, 244, 244, .2);
+    background: #1974dd;
+
+}
+#son2 >li{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 18px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(244, 244, 244, .2);
+    background: #1974dd;
+
+}
+
+.sidebar ul a{
+    color: white;
+    /*margin-left: 20px;*/
+}
+.sidebar ul a:hover{
+    color: black;
+    margin-left: 10px;
+    transition: .3s;
+}
+.topBar{
+    position: fixed;
+    margin-left: 250px;
+    float: left;
+    background: rgb(75,63,255);
+    color: white;
+    width: 100%;
+    height: 61px;
+
+}
+.topBar > ul >li{
+    float: left;
+    color: white;
+
+}
+.menuItem{
+    display: inline-block;
+    left: 100px;
+    padding: 18px 60px;
+    color: white;
+    height: 30px;
+    line-height: 30px;
+
+}
+.search{
+    position: relative;
+    left: 50px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 40px;
+    transition: .5s;
+    box-shadow: 0 0 0 2px #2573ef;
+    margin: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.search .icon{
+    position: absolute;
+    left: 10px;
+    top: 11px;
+}
+.search.active{
+    width: 300px;
+}
+
+.search .input{
+    position: relative;
+    width: 260px;
+    height: 40px;
+    left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search .input input{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.clear{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-42%);
+    right: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.show{
+    display: block;
+}
